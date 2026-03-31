@@ -47,9 +47,14 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem 'pry'
+  gem 'pry-byebug'
 end
 
 gem "rspec-rails", "~> 8.0", groups: [:development, :test]
+
+gem "byebug", platform: :mri
 
 gem "factory_bot_rails", "~> 6.5", groups: [:development, :test]
 

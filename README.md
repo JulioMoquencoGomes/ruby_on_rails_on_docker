@@ -22,4 +22,8 @@ Comando para executar os testes automatizados do RSpec(dentro do container moke_
 
 **rspec**
 
-Como executar o projeto no browser(abra este link): **http://localhost:3000**
+Caso der o erro(403), utilize a variavel de ambiente de teste:
+
+**RAILS_ENV=test**
+
+Executar o projeto no browser(abra este link em alguma aba): **http://localhost:3000**
