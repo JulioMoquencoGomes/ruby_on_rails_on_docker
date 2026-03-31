@@ -34,7 +34,7 @@ module Api
         head :no_content
       end
 
-      def generate_hundred_books
+      def generate_ten_books_automatic
         FillBooksJob.perform_async
       end
 

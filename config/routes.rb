@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :books, path: "/books" do
-        get 'generate_hundred_books', on: :collection 
+        get 'generate_ten_books_automatic', on: :collection 
       end
     end
   end
