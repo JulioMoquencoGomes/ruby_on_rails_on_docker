@@ -4,7 +4,8 @@ module Api
       rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response 
       
       def index
-        render json: { books: Book.all }, status: :ok
+        books = Book.all
+        render json: { books: books, length: books.count }, status: :ok
       end
 
       def show
@@ -35,7 +36,7 @@ module Api
       end
 
       def generate_ten_books_automatic
-        FillBooksJob.perform_async
+        FillBooksJob.perform_async(1)
         render json: { message: "Ok" }, status: :ok
       end
 

@@ -57,9 +57,7 @@ RSpec.describe "Api::V1::BooksController", type: :request do
     it "espera retornar status 200" do
 
       books = Book.all
-      books.delete_all
       books.reload
-
       quantity = books.count
 
       get generate_ten_books_automatic_api_v1_books_path
