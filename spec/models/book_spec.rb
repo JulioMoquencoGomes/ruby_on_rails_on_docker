@@ -24,4 +24,9 @@ RSpec.describe Book, type: :model do
     expect(subject).to_not be_valid
   end
 
+  it "não é valido se o nome do autor do livro conter numero" do
+    subject.author = "Mr. Jackie235"
+    expect(subject).to_not be_valid
+  end
+
 end
