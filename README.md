@@ -41,3 +41,7 @@ Link da documentação Api:
 **http://localhost:3000/api-docs/index.html**
 
 ![Retorno da pagina da documentação api](Images/swagger_page.png)
+
+A imagem abaixo é um exemplo de uma request do verbo Put utilizando o Swagger:
+
+![Exemplo swagger](Images/example_swagger.png)

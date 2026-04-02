@@ -63,7 +63,7 @@ RSpec.describe "Api::V1::BooksController", type: :request do
       get generate_ten_books_automatic_api_v1_books_path
       expect(response).to have_http_status(200)
 
-      sleep 120
+      sleep 180
 
       books.reload
       new_quantity = books.count

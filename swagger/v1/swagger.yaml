@@ -96,6 +96,67 @@ paths:
                 - year
         '404':
           description: Book not found
+    put:
+      summary: Updates a book
+      tags:
+      - Books
+      parameters:
+      - name: id
+        in: path
+        put: Id of the Book
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Book updated
+        '422':
+          description: Invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                author:
+                  type: string
+                year:
+                  type: integer
+              required:
+              - name
+              - author
+              - year
+          application/xml:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                author:
+                  type: string
+                year:
+                  type: integer
+              required:
+              - name
+              - author
+              - year
+    delete:
+      summary: Delete a book
+      tags:
+      - Books
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Book deleted
+        '404':
+          description: Book not deleted
 servers:
 - url: http://localhost:3000/api/v1/
   variables:
