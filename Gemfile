@@ -61,3 +61,5 @@ gem "factory_bot_rails", "~> 6.5", groups: [:development, :test]
 gem "faker", "~> 3.6", groups: [:development, :test]
 
 gem "sidekiq", "~> 8.1"
+
+gem 'rswag'

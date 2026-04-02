@@ -1,0 +1,103 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/books":
+    post:
+      summary: Creates a book
+      tags:
+      - Books
+      parameters: []
+      responses:
+        '201':
+          description: Book created
+        '422':
+          description: Invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                author:
+                  type: string
+                year:
+                  type: integer
+              required:
+              - name
+              - author
+              - year
+          application/xml:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                author:
+                  type: string
+                year:
+                  type: integer
+              required:
+              - name
+              - author
+              - year
+  "/books/{id}":
+    get:
+      summary: Retrieves a book
+      tags:
+      - Books
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: Book found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  author:
+                    type: string
+                  year:
+                    type: integer
+                required:
+                - id
+                - name
+                - author
+                - year
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  author:
+                    type: string
+                  year:
+                    type: integer
+                required:
+                - id
+                - name
+                - author
+                - year
+        '404':
+          description: Book not found
+servers:
+- url: http://localhost:3000/api/v1/
+  variables:
+    defaultHost:
+      default: www.example.com

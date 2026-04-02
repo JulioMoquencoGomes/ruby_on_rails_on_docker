@@ -27,3 +27,5 @@ Caso der o erro(403), utilize a variavel de ambiente de teste:
 **RAILS_ENV=test**
 
 Executar o projeto no browser(abra este link em alguma aba): **http://localhost:3000**
+
+Link da documentação Api: **http://localhost:3000/api-docs/index.html**

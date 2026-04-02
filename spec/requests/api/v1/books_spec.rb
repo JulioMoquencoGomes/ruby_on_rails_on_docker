@@ -67,7 +67,6 @@ RSpec.describe "Api::V1::BooksController", type: :request do
 
       books.reload
       new_quantity = books.count
-
       expect(new_quantity).to eq((quantity+10))
 
     end

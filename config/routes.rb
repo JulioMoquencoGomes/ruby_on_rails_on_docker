@@ -4,6 +4,8 @@ require "rack/session/cookie"
 Sidekiq::Web.use Rack::Session::Cookie, secret: Rails.application.credentials.secret_key_base, same_site: true, max_age: 86400
 
 Rails.application.routes.draw do
+  mount Rswag::Ui::Engine => '/api-docs'
+  mount Rswag::Api::Engine => '/api-docs'
   get "up" => "rails/health#show", as: :rails_health_check
 
   root "home#index"
