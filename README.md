@@ -62,3 +62,7 @@ Esta imagem abaixo, é de um exemplo testado após consumir uma api externa(Free
 Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade(NewRelic).
 \
 ![Exemplo NewRelic](Images/newrelic.png)
+\
+![Exemplo NewRelic](Images/newrelic2.png)
+\
+![Exemplo NewRelic](Images/newrelic3.png)
