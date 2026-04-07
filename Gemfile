@@ -65,3 +65,5 @@ gem "sidekiq", "~> 8.1"
 gem 'rswag'
 
 gem 'httparty'
+
+gem 'newrelic_rpm'

@@ -57,3 +57,8 @@ A imagem abaixo é um exemplo de uma request do verbo Put utilizando o Swagger:
 Esta imagem abaixo, é de um exemplo testado após consumir uma api externa(Free Weather Api) com a gem HTTParty.
 \
 ![Exemplo swagger](Images/forecasts.png)
+\
+\
+Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade(NewRelic).
+\
+![Exemplo NewRelic](Images/newrelic.png)
