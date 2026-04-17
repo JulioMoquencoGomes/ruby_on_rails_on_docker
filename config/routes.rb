@@ -18,6 +18,8 @@ Rails.application.routes.draw do
       end
 
       get 'forecasts/:city', to: "forecasts#index"
+
+      get 'sqs/:message', to: "sqs#index"
     end
   end
 

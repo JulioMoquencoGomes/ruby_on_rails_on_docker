@@ -32,6 +32,11 @@ services:
       NEW_RELIC_AI_MONITORING_ENABLED: true
       NEW_RELIC_SPAN_EVENTS_MAX_SAMPLES_STORED: 10000
       NEW_RELIC_CUSTOM_INSIGHTS_EVENTS_MAX_SAMPLES_STORED: 100000
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      AWS_REGION: region
+      AWS_SQS_QUEUE_NAME: queue_name
+      AWS_QUEUE_URL: queue_url
     env_file:
      - ./.env.development
     volumes:

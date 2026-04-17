@@ -73,3 +73,17 @@ Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade
 \
 \
 ![Exemplo NewRelic](Images/newrelic3.png)
+\
+\
+![Exemplo swagger](Images/forecasts.png)
+\
+\
+As imagens abaixos é de um teste realizado utilizando a fila de mensageria SQS da Amazon AWS.
+\
+![Exemplo SQS](Images/sqs1.png)
+\
+\
+![Exemplo SQS](Images/sqs2.png)
+\
+\
+![Exemplo SQS](Images/sqs3.png)
