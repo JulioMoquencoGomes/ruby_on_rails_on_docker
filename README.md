@@ -44,6 +44,7 @@ Executar o projeto no browser(abra este link em alguma aba):
 ![Retorno da pagina inicial](Images/index.png)
 \
 \
+\
 Link da documentação Api: 
 \
 **http://localhost:3000/api-docs/index.html**
@@ -52,19 +53,21 @@ Link da documentação Api:
 ![Retorno da pagina da documentação api](Images/swagger_page.png)
 \
 \
-A imagem abaixo é um exemplo de uma request do verbo Put utilizando o Swagger:
+A imagem abaixo é um exemplo de uma request do verbo Put utilizando o **Swagger**:
 \
 \
 ![Exemplo swagger](Images/example_swagger.png)
 \
 \
-Esta imagem abaixo, é de um exemplo testado após consumir uma api externa(Free Weather Api) com a gem HTTParty.
+\
+Esta imagem abaixo, é de um exemplo testado após consumir uma api externa(Free Weather Api) com a gem **HTTParty**.
 \
 \
 ![Exemplo swagger](Images/forecasts.png)
 \
 \
-Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade(NewRelic).
+\
+Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade(**NewRelic**).
 \
 ![Exemplo NewRelic](Images/newrelic.png)
 \
@@ -75,10 +78,8 @@ Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade
 ![Exemplo NewRelic](Images/newrelic3.png)
 \
 \
-![Exemplo swagger](Images/forecasts.png)
 \
-\
-As imagens abaixos é de um teste realizado utilizando a fila de mensageria SQS da Amazon AWS.
+As imagens abaixos é de um teste realizado utilizando a fila de mensageria **SQS** da **Amazon AWS**.
 \
 ![Exemplo SQS](Images/sqs1.png)
 \
