@@ -173,22 +173,44 @@ paths:
           description: Forecasts found
         '404':
           description: Forecasts not found
-  "/sqs/{message}":
-    get:
+  "/sqs":
+    post:
       summary: Create a queue sqs (Amazon AWS)
       tags:
       - Amazon AWS - Sqs
-      parameters:
-      - name: message
-        in: path
-        required: true
-        schema:
-          type: string
+      parameters: []
       responses:
         '200':
           description: Queue Sqs created
         '404':
           description: Queue Sqs not created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+              required:
+              - message
+          application/xml:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+              required:
+              - message
+    get:
+      summary: Retrieves a queue sqs (Amazon AWS)
+      tags:
+      - Amazon AWS - Sqs
+      responses:
+        '200':
+          description: Retrieves Sqs
+        '404':
+          description: Not Retrieves
 servers:
 - url: http://localhost:3000/api/v1/
   variables:

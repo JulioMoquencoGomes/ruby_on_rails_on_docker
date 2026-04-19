@@ -19,7 +19,8 @@ Rails.application.routes.draw do
 
       get 'forecasts/:city', to: "forecasts#index"
 
-      get 'sqs/:message', to: "sqs#index"
+      post 'sqs', to: "sqs#producer"
+      get 'sqs', to: "sqs#consumer"
     end
   end
 

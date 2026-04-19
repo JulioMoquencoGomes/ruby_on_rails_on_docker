@@ -81,12 +81,15 @@ Abaixo representa o monitoramento sendo feito pela plataforma de Observabilidade
 
 ### Utilizando mensageria Amazon AWS SQS
 \
-As imagens abaixos é de um teste realizado.
+As imagens abaixo é de um teste realizado, consumindo e produzindo mensagem no serviço de fila da Amazon AWS, após consumir automaticamente realiza a remoção da mensagem.
 \
-![Exemplo SQS](Images/sqs1.png)
-\
-\
-![Exemplo SQS](Images/sqs2.png)
+![Exemplo SQS](Images/sqs4.png)
 \
 \
-![Exemplo SQS](Images/sqs3.png)
+![Exemplo SQS](Images/sqs5.png)
+\
+\
+![Exemplo SQS](Images/sqs6.png)
+\
+\
+![Exemplo SQS](Images/sqs7.png)
